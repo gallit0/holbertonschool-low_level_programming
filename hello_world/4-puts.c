@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - function includes the following uses put to put a string
- * Returns: 0
+ * Return: 0
  */
 int main(void)
 {
