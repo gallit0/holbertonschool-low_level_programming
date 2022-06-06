@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main
+ * function main includes the following
  * uses put to put a string
  * returns 0
  */
