@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	printf("Size of a char: ", sizeof(char), "\n");
-	printf("Size of an int: ", sizeof(int), "\n");
-	printf("Size of a long int: ", sizeof(long int), "\n");
-	printf("Size of a long long int: ", sizeof(long long int), "\n");
-	printf("Size of a float: ", sizeof(float), "\n");
+	puts("Size of a char: ", sizeof(char), "\n");
+	puts("Size of an int: ", sizeof(int), "\n");
+	puts("Size of a long int: ", sizeof(long int), "\n");
+	puts("Size of a long long int: ", sizeof(long long int), "\n");
+	puts("Size of a float: ", sizeof(float), "\n");
 	return (0);
 }
