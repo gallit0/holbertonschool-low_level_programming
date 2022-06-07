@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - hexadecimal
  * Return: 0
  */
