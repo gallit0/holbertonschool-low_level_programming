@@ -16,6 +16,6 @@ int main(void)
 			continue;
 		}
 		i++;
-	} while (c <= 102);
+	} while (i <= 102);
 	return (0);
 }
