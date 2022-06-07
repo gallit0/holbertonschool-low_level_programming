@@ -1,6 +1,6 @@
 #include <stdio.h>
  /**
-  * main - hexadecimal
+  * main - hexadecimal putchar
   * Return: 0
   */
 
@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 48;
 	
-	do{
+	do {
 		putchar(i);
 		if (i == 57)
 		{
@@ -17,5 +17,6 @@ int main(void)
 		}
 		i++;
 	} while (i <= 102);
+	putchar(10);
 	return (0);
 }
