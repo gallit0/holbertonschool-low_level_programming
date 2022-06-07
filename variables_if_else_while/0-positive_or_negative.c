@@ -12,15 +12,15 @@ int main(void)
 	/* your code goes there */
 	if (n < 0)
 	{
-		puts("is negative");
+		printf ("is negative");
 	}
 	else if (n > 0)
 	{
-		puts("is postive");
+		printf ("is postive");
 	}
 	else
 	{
-		puts("is zero");
+		printf ("is zero");
 	}
 	return (0);
 }
