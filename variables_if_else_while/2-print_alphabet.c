@@ -12,6 +12,7 @@ int main (void)
 		x = tolower(x);
 		putchar(x);
 	}
+	putchar(10);
 
 	return (0);
 }
