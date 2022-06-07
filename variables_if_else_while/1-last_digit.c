@@ -4,6 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ *main - check numbers
+ *Return: 0
+ */
 int main(void)
 {
 	int n;
@@ -18,13 +22,13 @@ int main(void)
 	{
 		printf(" and is greater than 5\n");
 	}
-	else if(lastDigit == 0)
+	else if (lastDigit == 0)
 	{
 		printf(" and is 0\n");
 	}
 	else
 	{
-		printf(" and os ñess than 6 and not 0\n");
+		printf(" and is less than 6 and not 0\n");
 	}
 	return (0);
 }
