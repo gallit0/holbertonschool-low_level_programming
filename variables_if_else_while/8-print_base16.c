@@ -1,9 +1,8 @@
 #include <stdio.h>
-
- /**
-  *main - hexadecimal putchar
-  * Return: 0
-  */
+/*
+ * main - hexadecimal
+ * Return: 0
+ */
 
 int main(void)
 {
