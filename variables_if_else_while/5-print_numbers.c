@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ *main - numbers
+ *Return: 0
+ */
 
 int main(void)
 {
