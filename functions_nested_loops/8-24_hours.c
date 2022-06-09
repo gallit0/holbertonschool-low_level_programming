@@ -2,8 +2,8 @@
 
 /**
  * jack_bauer - clock
- * @i: hours
- * @j: mins
+ * @i - hours
+ * @j -
  */
 
 void jack_bauer(void)
