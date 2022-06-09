@@ -4,7 +4,6 @@
  * jack_bauer - clock
  * @i: hours
  * @j: mins
- * Return: 0
  */
 
 void jack_bauer(void)
