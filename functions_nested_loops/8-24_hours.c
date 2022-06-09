@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - 24
+ * jack_bauer - clock
  * @i: hours
  * @j: mins
  * Return: 0
