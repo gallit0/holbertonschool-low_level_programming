@@ -7,7 +7,7 @@
 
 int _islower(int c)
 {
-	if (isupper(c));
+	if ({isupper(c)});
 		return (0);
 	else;
 		return (1);
