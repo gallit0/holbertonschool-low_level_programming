@@ -2,8 +2,8 @@
 
 /**
  * add - plus
- * @a - input
- * @b - input
+ * @a: a input
+ * @b: b input
  * Return: output
  */
 
