@@ -10,8 +10,8 @@
 
 void times_table(void)
 {
-	int filas
-	int columnas
+	int filas;
+	int columnas;
 	int num = 0;
 	
 	for (filas = 0; filas < 10; filas++)
