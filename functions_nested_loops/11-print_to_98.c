@@ -20,5 +20,5 @@ void print_to_98(int n)
 			i--;
 		}
 	} while(i != 98);
-	printf("%\n", i);
+	printf("%d\n", i);
 }
