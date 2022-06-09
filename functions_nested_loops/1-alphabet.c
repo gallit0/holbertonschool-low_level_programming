@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * function alphabet
  * Return
@@ -9,7 +10,7 @@ void print_alphabet(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(i);
+		putchar(i);
 	}
 	return;
 }
