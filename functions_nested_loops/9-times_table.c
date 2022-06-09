@@ -16,7 +16,10 @@ void times_table(void)
 
 	for (filas = 0; filas < 10; filas++)
 	{
-		for (columnas = 0; columnas < 10; columnas++)
+		putchar(0+ '0');
+		_putchar(',');
+		_putchar(' ');
+		for (columnas = 1; columnas < 10; columnas++)
 		{
 			num = filas * columnas;
 			if ((num / 10) != 0)
