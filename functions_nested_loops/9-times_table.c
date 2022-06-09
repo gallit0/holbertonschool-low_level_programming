@@ -16,7 +16,7 @@ void times_table(void)
 
 	for (filas = 0; filas < 10; filas++)
 	{
-		_putchar(0+ '0');
+		_putchar(0 + '0');
 		_putchar(',');
 		_putchar(' ');
 		for (columnas = 1; columnas < 10; columnas++)
@@ -29,7 +29,8 @@ void times_table(void)
 					_putchar((num / 10) + '0');
 				}
 			}
-			else{
+			else
+			{
 				_putchar(' ');
 			}
 			_putchar((num % 10) + '0');
