@@ -24,8 +24,8 @@ void jack_bauer(void)
 			{
 				_putchar(0 + '0');
 			}
-			putchar(j + '0');
-			putchar(10);
+			_putchar(j + '0');
+			_putchar(10);
 		}
 	}
 }
