@@ -2,7 +2,7 @@
 
 /**
  * main - debbugs
- * @i: number
+ * @i - number
  * Return: 0
  */
 
