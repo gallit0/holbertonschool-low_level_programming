@@ -8,7 +8,7 @@
 
 int print_last_digit(int r)
 {
-	r = _abs(r);
-	r = r % 10;
-	return(r);
+	digit = _abs(r);
+	digit = digit % 10;
+	return (digit);
 }
