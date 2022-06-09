@@ -5,7 +5,7 @@
  * Return: -r
  */
 
-int _abs(int)
+int _abs(int r)
 {
 	return (-r);	
 }
