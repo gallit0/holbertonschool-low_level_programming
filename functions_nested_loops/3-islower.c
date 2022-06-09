@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _islower - checks whether its lower or not
@@ -7,8 +6,8 @@
 
 int _islower(int c)
 {
-	if ( isupper(c) )
-		return (0);
-	else
+	if (c >= 'a' && c <= 'z')
 		return (1);
+	else
+		return (0);
 }
