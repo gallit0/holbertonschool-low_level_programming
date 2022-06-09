@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - function alphabet
- * Return: 0
+ * function alphabet
+ * Return
  */
 
 void print_alphabet(void)
 {
-	char i = 'a';
-	
-	for (; i <='z'; i++)
+	char i;
+
+	for (i = 'a'; i <='z'; i++)
 	{
 		putchar(i);
-		}
+	}
 	return;
 }
 
