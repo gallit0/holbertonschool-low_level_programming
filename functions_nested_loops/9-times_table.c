@@ -10,7 +10,9 @@
 
 void times_table(void)
 {
-	int filas, columnas; num;
+	int filas
+	int columnas
+	int num = 0;
 	
 	for (filas = 0; filas < 10; filas++)
 	{
@@ -32,6 +34,6 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		putchar(10);
+		_putchar(10);
 	}
 }
