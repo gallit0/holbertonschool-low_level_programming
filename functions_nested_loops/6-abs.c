@@ -2,6 +2,7 @@
 
 /**
  * _abs - absolute value
+ * @r: number
  * Return: -r
  */
 
