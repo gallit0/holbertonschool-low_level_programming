@@ -1,6 +1,10 @@
 #include "main.h"
 
-
+/**
+ * print_sign - checks n
+ * @n: number
+ * Return: 0, 1 or -1
+ */
 
 int print_sign(int n)
 {
