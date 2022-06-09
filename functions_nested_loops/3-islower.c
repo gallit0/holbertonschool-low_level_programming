@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks whether its lower or not
- *@c - character
+ *@c: character
  */
 
 int _islower(int c)
