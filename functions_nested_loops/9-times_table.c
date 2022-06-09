@@ -1,5 +1,11 @@
-#include "main"
+#include "main.h"
 
+/**
+ * times_table - time table
+ * @filas - rows
+ * @columnas - columns
+ * @num -number
+ */
 
 
 void times_table(void)
