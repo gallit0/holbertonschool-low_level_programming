@@ -6,7 +6,3 @@ git push
 
 
 
-git add .
-read -p "Mesnaje: " msj
-git commit -m "$msj"
-git push
