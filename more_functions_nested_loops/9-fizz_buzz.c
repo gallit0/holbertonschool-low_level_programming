@@ -3,7 +3,7 @@
 /**
  * main - fizzbuzz
  * @i - iterations
- * Return: 0;
+ * Return: 0
  */
 
 int main(void)
@@ -24,10 +24,12 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		else{
+		else
+		{
 			printf("%d", i);
 		}
-		if (i < 100){
+		if (i < 100)
+		{
 			printf(" ");
 		}
 	}
