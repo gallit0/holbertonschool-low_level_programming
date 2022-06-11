@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_square - print a square shpe
+ * @i - iterations
+ * @j - iterations
+ * @size: size of the square
+ */
 
 void print_square(int size)
 {
@@ -9,11 +15,11 @@ void print_square(int size)
 	{
 		for (i = 0; i < size; i++)
 		{
-			for (j = 0; < size; j++)
+			for (j = 0; j < size; j++)
 			{
 				_putchar('#');
 			}
-			putchar(10);
+			_putchar(10);
 		}
 	}
 	else
