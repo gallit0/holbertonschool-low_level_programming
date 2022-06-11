@@ -2,7 +2,8 @@
 
 /**
  * print_most_numbers - print numbers
- * @i - iterations
+ * @i - iterationos
+ */
 
 void print_most_numbers(void)
 {
