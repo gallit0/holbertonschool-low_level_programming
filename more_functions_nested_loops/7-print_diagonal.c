@@ -4,6 +4,7 @@
  * @i - iterations
  * @j - iterations
  * @n: number
+ */
 
 void print_diagonal(int n)
 {
