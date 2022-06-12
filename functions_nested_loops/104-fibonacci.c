@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	unsigned long int currentNumber = 2;
-	unsigned long int previousNumber = 1;
+	unsigned long int currentNumber = 1;
+	unsigned long int previousNumber = 0;
 	unsigned long int temp;
 	int i;
 
