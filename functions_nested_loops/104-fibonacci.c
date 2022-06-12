@@ -11,9 +11,9 @@
 
 int main(void)
 {
-	unsigned int currentNumber = 1;
-	unsigned int previousNumber = 0;
-	unsigned int temp;
+	unsigned long int currentNumber = 1;
+	unsigned long int previousNumber = 0;
+	unsigned long int temp;
 	int i;
 
 	for (i = 1; i <= 98; i++)
