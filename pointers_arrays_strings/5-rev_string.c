@@ -3,9 +3,9 @@
 
 void rev_string(char *s)
 {
-	char reversed;
 	int lenght = strlen(s);
 	int i = lenght - 1;
+	char reversed[lenght];
 
 	while (i >= 0)
 	{
