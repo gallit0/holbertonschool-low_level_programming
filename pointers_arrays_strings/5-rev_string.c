@@ -9,10 +9,10 @@ void rev_string(char *s)
 
 	while (i >= 0)
 	{
-		reversed[i] = *(s + i);
+		(reversed + i) = *(s + i);
 	}
 	for (i = 0; *(s + i) != lenght; i++)
 	{
-		*(s + i) = reversed[i];
+		*(s + i) = (reversed + i);
 	}
 }
