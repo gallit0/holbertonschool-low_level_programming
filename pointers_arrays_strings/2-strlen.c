@@ -10,8 +10,6 @@ int _strlen(char *s)
 {
 	int i = 0;
 	char check = 0;
-	int result;
-
 
 	do {
 		check = *(s + i);
