@@ -6,7 +6,7 @@ void print_rev(char *s)
 	int i;
 	int length = _strlen(s);
 
-        for (i = length; *(str + i) != '\0'; i--)
+        for (i = length; *(str + i) >= 0; i--)
 	{
 		
 	        _putchar(*(str + i));
