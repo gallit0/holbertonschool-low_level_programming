@@ -8,11 +8,11 @@
 
 int _strlen(char *s)
 {
-	int unsigned i = 0;
+	int i = 0;
 	char check;
 
 	do {
-		check = *(s + i);
+		check = *s[i];
 		i++;
 	} while (check != '\0');
 	return (check);
