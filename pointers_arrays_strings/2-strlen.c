@@ -17,6 +17,5 @@ int _strlen(char *s)
 		check = *(s + i);
 		i++;
 	} while (check != '\0');
-	result = i -2;
-	return (result);
+	return (i--);
 }
