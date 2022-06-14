@@ -3,17 +3,19 @@
 /**
  * _strlen - lenght of string
  * @s: string
- * @i - iterations
+ * Return: check
  */
 
 int _strlen(char *s)
 {
 	int i = 0;
-	char check;
+	char check = 0;
+	
+
 
 	do {
-		check = *s[i];
+		check = *(s + i);
 		i++;
 	} while (check != '\0');
-	return (check);
+	return (i--);
 }
