@@ -5,7 +5,7 @@ void rev_string(char *s)
 {
 	int lenght = strlen(s);
 	int i = lenght - 1;
-	char reversed[lenght];
+	char reversed[];
 
 	while (i >= 0)
 	{
