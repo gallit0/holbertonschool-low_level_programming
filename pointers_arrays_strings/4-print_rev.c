@@ -8,7 +8,7 @@ void print_rev(char *s)
 
         for (i = length; i >= 0; i--)
 	{	
-	        _putchar(*(str + i));
+	        putchar(*(str + i));
 	}
-	_putchar('10');
+	putchar('10');
 }
