@@ -1,7 +1,10 @@
 #include "main.h"
 #include <string.h>
 
-
+/**
+ * print_rev - print reversed string
+ * @s: string
+ */
 
 void print_rev(char *s)
 {
@@ -12,5 +15,4 @@ void print_rev(char *s)
 	{	
 	        _putchar(*(s + i));
 	}
-	_putchar(10);
 }
