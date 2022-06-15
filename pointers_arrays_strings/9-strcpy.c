@@ -4,6 +4,7 @@
  * _strcpy - copy string
  * @dest: string
  * @src: string
+ * Return: temp
  */
 
 char *_strcpy(char *dest, char *src)
