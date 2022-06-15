@@ -13,7 +13,7 @@ void puts2(char *str)
 	{
 		if ((str[i]) % 2 == 0)
 		{
-			putchar((str[i]) + '0');
+			putchar((str[i]));
 		}
 	}
 	putchar(10);
