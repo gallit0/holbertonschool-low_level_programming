@@ -9,11 +9,12 @@
 void print_array(int *a, int n)
 {
 	int i;
+	int limit = n - 1;
 
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
-		if (i < n)
+		if (i < limit)
 		{
 			printf(", ");
 		}
