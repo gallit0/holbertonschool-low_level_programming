@@ -20,7 +20,7 @@ void puts_half(char *str)
 	}
 	for (; n < length_of_the_string; n++)
 	{
-		*(str + n);
+		putchar(*(str[n]));
 	}
 	putchar(10);
 }
