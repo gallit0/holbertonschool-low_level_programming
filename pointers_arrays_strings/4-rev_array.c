@@ -10,7 +10,7 @@ void reverse_array(int *a, int n)
 {
 	int i;
 	int temp;
-	int limit = n / 2;
+	int limit = (n / 2) - 1;
 	int j = n;
 
 	for (i = 0; i < limit; i++)
