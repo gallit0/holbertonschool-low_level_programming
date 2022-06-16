@@ -19,7 +19,7 @@ char *cap_string(char *str)
 	{
 		prev = i - 1;
 		/*if (str[i] >= 'a' && str[i] <= 'z' && (str[prev] == '	' || str[prev] ==' ' || str[prev] =='\n' || str[prev] == ',' || str[prev] == ';' || str[prev] == '.' || str[prev] == '!' || str[prev] == '"' || str[prev] == '(' || str[prev] == ')' || str[prev] == '{' || str[prev] == '}'))*/
-		if (str[i] >= 'a' && str[i] <= 'z' && isalpha(str[i]))
+		if (str[i] >= 'a' && str[i] <= 'z' && !(isalpha(str[prev])))
 		{
 			str[i] = str[i] - 32;
 		}
