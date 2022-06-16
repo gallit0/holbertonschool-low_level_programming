@@ -10,7 +10,7 @@ char *cap_string(char *str)
 {
 	int i, j;
 	int prev;
-	char prohibited[] = {"1011\n,;.!?\"(){}"};
+	char prohibited[] = {10, 11, "\n,;.!?\"(){}"};
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
