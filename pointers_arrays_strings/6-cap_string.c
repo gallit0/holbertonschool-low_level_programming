@@ -37,6 +37,7 @@ char *cap_string(char *str)
 			if (str[i] >= 'a' && str[i] <= 'z' && str[prev] == prohibited[j])
 			{
 				str[i] = str[i] - 32;
+				break;
 			}
 		}
 	}
