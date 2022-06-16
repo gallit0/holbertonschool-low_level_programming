@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 
 	for (i = destTotalChars; i < totalChars; i++)
 	{
-		dest[i] = str[j];
+		dest[i] = src[j];
 		j++;
 	}
 	return (dest);
