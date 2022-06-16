@@ -10,7 +10,8 @@ char *cap_string(char *str)
 {
 	int i, j;
 	int prev;
-	char prohibited[0] = ' ';
+	char prohibited[13];
+	prohibited[0] = ' ';
 	prohibited[1] = '	';
 	prohibited[2] = '\n';
 	prohibited[3] = ',';
@@ -23,7 +24,6 @@ char *cap_string(char *str)
 	prohibited[10] = ')';
 	prohibited[11] = '{';
 	prohibited[12] = '}';
-	prohibited[13] = 0;
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
