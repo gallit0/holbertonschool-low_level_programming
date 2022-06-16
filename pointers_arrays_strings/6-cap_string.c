@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * cap_string - capitalize
@@ -8,8 +9,9 @@
 
 char *cap_string(char *str)
 {
-	int i;
+	int i, j;
 	int prev;
+	char prohibited = {" 	\n,;.!?\"(){}"};
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
@@ -18,10 +20,12 @@ char *cap_string(char *str)
 	for (i = 1; str[i] != 0; i++)
 	{
 		prev = i - 1;
-		/*if (str[i] >= 'a' && str[i] <= 'z' && (str[prev] == '	' || str[prev] ==' ' || str[prev] =='\n' || str[prev] == ',' || str[prev] == ';' || str[prev] == '.' || str[prev] == '!' || str[prev] == '"' || str[prev] == '(' || str[prev] == ')' || str[prev] == '{' || str[prev] == '}'))*/
-		if (str[i] >= 'a' && str[i] <= 'z' && !(isalpha(str[prev])))
+		for (j = 0; j != 0; j++)
 		{
-			str[i] = str[i] - 32;
+			if (str[i] >= 'a' && str[i] <= 'z' && str[prev] == prohibited[j])
+			{
+				str[i] = str[i] - 32;
+			}
 		}
 	}
 	return (str);
