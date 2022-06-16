@@ -9,7 +9,7 @@ int _strcmp(char *s1, char *s2)
 	int temp;
 	int len = strlen(s1);
 
-	for (i = 0; i < strlen(s1); i++)
+	for (i = 0; i < len; i++)
 	{
 		temp = s1[i] - s2[i];
 		counter += temp;
