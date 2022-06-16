@@ -21,7 +21,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			temp = -s2[i];
 		}
-		if else (i < len2)
+		else if (i < len2)
 		{
 			temp = s1[i];
 		}
