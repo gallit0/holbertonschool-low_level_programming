@@ -5,7 +5,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i;
-	int counter;
+	int counter = 0;
 	int temp;
 
 	if (s1 == s2)
