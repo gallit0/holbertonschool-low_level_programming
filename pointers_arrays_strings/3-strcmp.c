@@ -18,11 +18,11 @@ int _strcmp(char *s1, char *s2)
 		temp = s1[i] - s2[i];
 		counter += temp;
 	}
-	if (temp < 0)
+	if (counter < 0)
 	{
 		return (counter - 4);
 	}
-	else if (temp > 0)
+	else if (counter > 0)
 	{
 		return (counter + 4);
 	}
