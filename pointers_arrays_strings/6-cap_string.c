@@ -18,7 +18,7 @@ char *cap_string(char *str)
 	for (i = 1; str[i] != 0; i++)
 	{
 		prev = i - 1;
-		if (str[prev] == {' ', ',', '.', '!', '?', '"', '(', 41, '{', 125, 10 } && str[i] >= 'a' && str[i] <= 'z')
+		if (str[prev] == [' ', ',', '.', '!', '?', '"', '(', 41, '{', 125, 10] && str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
 		}
