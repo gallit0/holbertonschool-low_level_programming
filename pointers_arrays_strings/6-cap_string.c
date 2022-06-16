@@ -1,10 +1,15 @@
 #include "main.h"
 
-
+/**
+ * cap_string - capitalize
+ * @str: string
+ * Return: str
+ */
 
 char *cap_string(char *str)
 {
 	int i;
+	int prev;
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
@@ -12,7 +17,8 @@ char *cap_string(char *str)
 	}
 	for (i = 1; str[i] != 0; i++)
 	{
-		if (str[i - 1] == ' ')
+		prev = i - 1;
+		if (str[prev] == ' ' && str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
 		}
