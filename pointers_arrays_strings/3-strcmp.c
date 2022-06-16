@@ -5,6 +5,7 @@
  * @s1: string
  * @s2: string
  * Return: difference
+ */
 
 int _strcmp(char *s1, char *s2)
 {
