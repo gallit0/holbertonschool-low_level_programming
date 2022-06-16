@@ -1,6 +1,12 @@
 #include "main.h"
 
-
+/**
+ * _strncat - concatenate
+ * @dest: string
+ * @src: string
+ * @n: number
+ * Return: dest
+ */
 
 char *_strncat(char *dest, char *src, int n)
 {
@@ -14,5 +20,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i] = src[j];
 		j++;
 	}
-	return (dest);	
+	return (dest);
 }
