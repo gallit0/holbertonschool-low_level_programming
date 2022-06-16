@@ -24,8 +24,9 @@ int _strcmp(char *s1, char *s2)
 	{
 		return (counter - 4);
 	}
-	else
+	else if (temp > 0)
 	{
 		return (counter + 4);
 	}
+	return (0);
 }
