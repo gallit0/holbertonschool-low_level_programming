@@ -17,19 +17,15 @@ int _strcmp(char *s1, char *s2)
 
 	for (i = 0; (s1[i] != 0) && (s2[i] != 0); i++)
 	{
-		if (i > len1)
-		{
-			temp = -s2[i];
-		}
-		else if (i < len2)
-		{
-			temp = s1[i];
-		}
-		else
-		{
-			temp = s1[i] - s2[i];
-		}
+		temp = s1[i] - s2[i];
 		counter += temp;
 	}
-	return (counter);
+	if (temp < 0)
+	{
+		return (counter - 4);
+	}
+	else
+	{
+		return (counter + 4);
+	}
 }
