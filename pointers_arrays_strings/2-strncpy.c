@@ -10,25 +10,11 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int destTotalChars = strlen(dest);
-	int totalChars = destTotalChars + (strlen(src));
 	int i;
-	int j = 0;
 
-	if (destTotalChars < n)
+	for (i = 0; i < n; i++)
 	{
-		for (i = n; dest[i] != 0; i++)
-		{
-			dest[i] = 0;
-		}
+		dest[i] = src[i];
 	}
-	else if (destTotalChars > n)
-	{
-		for (i = destTotalChars; j < n && i < totalChars; i++)
-		{
-			dest[i] = src[j];
-			j++;
-		}
-	}
-	return (dest);	
+	return (src);	
 }
