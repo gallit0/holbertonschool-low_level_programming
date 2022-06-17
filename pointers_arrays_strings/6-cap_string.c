@@ -11,6 +11,7 @@ char *cap_string(char *str)
 	int i, j;
 	int prev;
 	char prohibited[13];
+
 	prohibited[0] = ' ';
 	prohibited[1] = '	';
 	prohibited[2] = '\n';
