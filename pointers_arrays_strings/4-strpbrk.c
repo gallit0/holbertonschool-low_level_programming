@@ -9,13 +9,11 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	if ((*s == 0) || (*accept == 0))
+		return (0);
 	do {
-		do{
-			if (*s == *accept)
-			{
+		if (_strchr(s, *accept)
 				return (s);
-			}
-		} while (*accept++);
 	} while (*s++);
 	return (0);
 }
