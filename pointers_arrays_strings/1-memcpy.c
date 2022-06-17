@@ -1,6 +1,12 @@
 #include "main.h"
 
-
+/**
+ * _memcpy - string insertion
+ * @dest: string
+ * @src: string
+ * @n: number
+ * Return: dest
+ */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
