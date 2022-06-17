@@ -10,8 +10,12 @@
 char *_strpbrk(char *s, char *accept)
 {
 	do {
-		if (*s == *accept)
-			break;
+		do{
+			if (*s == *accept)
+			{
+				return (s);
+			}
+		} while (*accept++);
 	} while (*s++);
-	return (s);
+	return (0);
 }
