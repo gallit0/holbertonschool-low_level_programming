@@ -11,9 +11,10 @@ char *_strpbrk(char *s, char *accept)
 {
 	if ((*s == 0) || (*accept == 0))
 		return (0);
-	do {
+	while (*s++)
+	{
 		if (strchr(s, *accept))
 			return (s);
-	} while (*s++);
+	}
 	return (0);
 }
