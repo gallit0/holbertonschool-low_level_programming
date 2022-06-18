@@ -6,9 +6,9 @@
  * @size: int
  */
 
-void print_diagsums(int *a, int size)
+void print_diagsums(int a, int size)
 {
-	unsigned int i, j;
+	int i, j;
 	int result0 = 0;
 	int result1 = 0;
 
