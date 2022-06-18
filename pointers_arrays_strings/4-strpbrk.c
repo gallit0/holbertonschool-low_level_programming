@@ -16,6 +16,7 @@ char *_strpbrk(char *s, char *accept)
 		if (strchr(s, *accept) && *s == *accept)
 			return (s);
 		s++;
+		accept++;
 	}
 	return (0);
 }
