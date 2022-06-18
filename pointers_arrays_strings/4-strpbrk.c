@@ -15,7 +15,8 @@ char *_strpbrk(char *s, char *accept)
 	{
 		do {
 			if (*s == *accept)
-				return (s++);
+				s++:
+				return (s);
 		}while (*accept++);
 		s++;
 	}
