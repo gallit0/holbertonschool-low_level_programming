@@ -13,10 +13,9 @@ char *_strpbrk(char *s, char *accept)
 		return (0);
 	while (*s)
 	{
-		if (strchr(s, *accept) && *s == *accept)
+		if (*s == *accept)
 			return (s);
 		s++;
-		accept++;
 	}
 	return (0);
 }
