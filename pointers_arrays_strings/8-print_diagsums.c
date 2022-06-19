@@ -9,19 +9,15 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	int j = 0;
+	int j = size - 1;
 	unsigned int result0 = 0;
 	unsigned int result1 = 0;
 
 	for (; i < size; i++)
 	{
-		for (; j < size; j++)
-		{
-			if (i == j)
-				result0 += (*((int *)a + i * size + j));
-			if (j == (size - 1 - i))
-				result1 += (*((int *)a + i * size + j));
-		}
+		result0 += (*(int *)a + i);
+		restult1 += (*(int *)a + j);
+		j--;
 	}
 	printf("%d, %d\n", result0, result1);
 }
