@@ -6,7 +6,7 @@
  * @size: int
  */
 
-void print_diagsums(int *a, int size)
+void print_diagsums(int **a, int size)
 {
 	int i;
 	int j;
