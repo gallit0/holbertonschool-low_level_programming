@@ -19,7 +19,7 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 				result0 += *((int *)a + i * size + j);
-			if ( j == (size - 1 - i))
+			if (j == (size - i))
 				result1 += *((int *)a + i * size + j);
 		}
 	}
