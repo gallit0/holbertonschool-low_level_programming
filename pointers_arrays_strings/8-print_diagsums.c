@@ -6,19 +6,22 @@
  * @size: int
  */
 
-void print_diagsums(int **a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	int j = --size;
+	int j = 0;
 	int result0 = 0;
 	int result1 = 0;
 
-	for (; i < size;)
+	for (; i < size; i++)
 	{
-		result0 += a[i][i];
-		result1 += a[j][j];
-		i++;
-		j--;
+		for (; j < size; j++)
+		{
+			if (i == j)
+				result0 += *((int *)a + i * size + j);
+			if ( j == (size - 1 - i))
+				result1 += *((int *)a + i * size + j);
+		}
 	}
-	printf("%d, %d", result0, result1);
+	printf("%d, %d\n", result0, result1);
 }
