@@ -19,5 +19,5 @@ void print_diagsums(int **a, int size)
 		res1 += a[j][j];
 		j--;
 	}
-	printf("%d, %d\n", result0, result1);
+	printf("%d, %d\n", res0, res1);
 }
