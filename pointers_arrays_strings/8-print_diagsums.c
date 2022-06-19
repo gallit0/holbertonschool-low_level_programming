@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	for (; i < size; i++)
 	{
 		result0 += (*(int *)a + i);
-		restult1 += (*(int *)a + j);
+		result1 += (*(int *)a + j);
 		j--;
 	}
 	printf("%d, %d\n", result0, result1);
