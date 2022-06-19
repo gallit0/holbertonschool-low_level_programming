@@ -6,7 +6,7 @@
  * @size: int
  */
 
-void print_diagsums(int **a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i = 0;
 	int j = size - 1;
@@ -18,7 +18,9 @@ void print_diagsums(int **a, int size)
 		for (j = 0; j < size; j++)
 		{
 			if (i == j)
-			res0 += a[i][j];
+				res0 = res0 + (*((int *)a + i * size + j))
+			if (j == (size - 1 - i))
+				sum2 = sum2 + (*((int *)a + i * size + j));
 		}
 	}
 	printf("%d, %d\n", res0, res1);
