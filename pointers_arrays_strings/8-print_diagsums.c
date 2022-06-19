@@ -15,9 +15,11 @@ void print_diagsums(int **a, int size)
 
 	for (; i < size; i++)
 	{
-		res0 += a[i][i];
-		res1 += a[j][j];
-		j--;
+		for (j = 0; j < size; j++)
+		{
+			if (i == j);
+			res0 += a[i][j];
+		}
 	}
 	printf("%d, %d\n", res0, res1);
 }
