@@ -20,7 +20,7 @@ void print_diagsums(int *a, int size)
 			if (i == j)
 				res0 = res0 + (*((int *)a + i * size + j));
 			if (j == (size - 1 - i))
-				sum2 = sum2 + (*((int *)a + i * size + j));
+				res1 = res1 + (*((int *)a + i * size + j));
 		}
 	}
 	printf("%d, %d\n", res0, res1);
