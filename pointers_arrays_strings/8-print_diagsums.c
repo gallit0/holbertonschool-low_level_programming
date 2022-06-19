@@ -15,8 +15,8 @@ void print_diagsums(int *a, int size)
 
 	for (; i < size; i++)
 	{
-		result0 += (int *)a[i][i];
-		result1 += (int *)a[j][j];
+		result0 += (*(int *)a[i][i]);
+		result1 += (*(int *)a[j][j]);
 		j--;
 	}
 	printf("%d, %d\n", result0, result1);
