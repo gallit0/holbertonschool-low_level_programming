@@ -1,4 +1,4 @@
 #include <stdio.h>
 
 void _puts_recursion(char *s);
-void _puthcar(char c);
+void _putchar(char c);
