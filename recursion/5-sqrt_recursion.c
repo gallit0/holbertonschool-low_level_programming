@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
 * @i: int
 *Return: int
 */
-int sqrt_check(int n, i)
+int sqrt_check(int n, int i)
 {
 	if (i * i > n)
 	{
@@ -39,3 +39,4 @@ int sqrt_check(int n, i)
 	{
 		return (sqrt_check(n, i + 1));
 	}
+}
