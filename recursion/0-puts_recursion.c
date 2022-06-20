@@ -9,7 +9,7 @@ void _puts_recursion(char *s)
 {
 	_putchar(*s);
 	s++;
-	if (*s !='0')
+	if (*s)
 		_puts_recursion(s);
 	else
 		_putchar(10);
