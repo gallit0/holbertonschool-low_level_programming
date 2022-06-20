@@ -10,15 +10,12 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	else
-	{
-		return (prime(n/n));
-	}
+	return (prime(n / n));
 }
 
 /**
  * prime - checks for prime number
- * @n: number
+ * @i: number
  * Return: int
  */
 
