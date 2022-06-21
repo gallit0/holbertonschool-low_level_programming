@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		number = argv[i] - '0';
+		number = (argv[i] - '0');
 		res *= number;
 	}
 	printf("%d\n", res);
