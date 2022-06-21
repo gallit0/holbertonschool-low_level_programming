@@ -11,6 +11,7 @@ int main(int argc, char **argv[])
 {
 	int i;
 	int res = 1;
+	int number;
 
 	if (argc == 0)
 	{
@@ -19,8 +20,9 @@ int main(int argc, char **argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		res *= argv[i];
+		number = argv[i];
+		res *= number;
 	}
 	printf("%d\n", res);
 	return (0);
-} 
+ 
