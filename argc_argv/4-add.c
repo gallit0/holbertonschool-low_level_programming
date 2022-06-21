@@ -16,10 +16,10 @@ int main(int argc, char **argv)
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argsv[i]) > 0)
+		if (isdigit(argv[i]) > 0)
 		{
 			printf("Error\n");
-			retrun (1);
+			return (1);
 		}
 		res += atoi(argv[i]);
 	}
