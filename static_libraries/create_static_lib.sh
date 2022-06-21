@@ -1,4 +1,4 @@
-#!@/usr/bin/bash env
+#!bin/bas 
 gcc -c *.c
 ar rc liball.a *.o
 ranlib liball.a
