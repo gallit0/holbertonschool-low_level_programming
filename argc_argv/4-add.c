@@ -1,5 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
+/**
+ * main - print addition
+ * @argc: argc
+ * @argv: argv
+ * Return: 0 or 1 if error;
+ */
 
 int main(int argc, char **argv)
 {
