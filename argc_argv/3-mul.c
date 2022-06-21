@@ -11,7 +11,6 @@ int main(int argc, char **argv)
 {
 	int i;
 	int res = 1;
-	int number;
 
 	if (argc == 0)
 	{
@@ -20,8 +19,7 @@ int main(int argc, char **argv)
 	}
 	for (i = 1; i < argc; i++)
 	{
-		number = (argv[i] - '0');
-		res *= number;
+		res *= atoi(argv[i]);
 	}
 	printf("%d\n", res);
 	return (0);
