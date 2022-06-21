@@ -12,14 +12,17 @@
 int main(int argc, char **argv)
 {
 	int res = 0;
-	int i;
+	int i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[i]) > 0)
+		for (j = 0; argv[i][j] != ' '; j ++)
 		{
-			printf("Error\n");
-			return (1);
+			if (isdigit(argv[i][j]) > 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		res += atoi(argv[i]);
 	}
