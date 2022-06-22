@@ -19,5 +19,5 @@ char *create_array(unsigned int size, char c)
 	{
 		str[i] = c;
 	}
-	return NULL;
+	return (str);
 }
