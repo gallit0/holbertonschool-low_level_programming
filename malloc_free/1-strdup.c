@@ -6,7 +6,7 @@
  * Return:char
  */
 
-char *_strdup(char *str)
+char *_strdup(char *str[])
 {
 	int sizeStr = strlen(str);
 	char *str2;
