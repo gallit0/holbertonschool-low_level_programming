@@ -8,6 +8,7 @@
 
 char *_strdup(char *str)
 {
+	int sizeStr = strlen(str);
 	char *str2;
 
 	if (str == NULL)
@@ -20,7 +21,7 @@ char *_strdup(char *str)
 	{
 		*str2++ = *str++;
 	}
-	str2[i] = 0;
+	*str2 = 0;
 	free(str);
 	return (str2);
 }
