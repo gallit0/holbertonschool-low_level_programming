@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * free_grind - frees a grind
- * @grind: array
+ * free_grid - frees a grid
+ * @grid: array
  * @height: int
  */
 
