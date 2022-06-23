@@ -8,15 +8,15 @@
 
 char *_strdup(char *str)
 {
-	int sizeStr = strlen(str);
+	int sizeStr;
 	char *str2;
 	int i = 0;
 
 	if (str == NULL)
 	{
-		printf("failed to allocate memory");
 		return (0);
 	}
+	sizeStr = strlen(str);
 	str2 = malloc(sizeStr + 1);
 
 	if (str2 == NULL)
