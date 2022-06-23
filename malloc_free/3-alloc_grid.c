@@ -2,7 +2,7 @@
 
 /**
  * alloc_grid - alloc 2 dimensional grid
- * @with: int
+ * @width: int
  * @height: int
  * Return: int
  */
@@ -12,7 +12,7 @@ int **alloc_grid(int width, int height)
 	int **grid;
 	int i, j;
 
-	if (width <= 0 || width <= 0 )
+	if (width <= 0 || width <= 0)
 		return (0);
 	grid = (int **) malloc(height * sizeof(int *));
 	if (grid == NULL)
