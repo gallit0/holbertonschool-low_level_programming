@@ -10,6 +10,7 @@ char *_strdup(char *str)
 {
 	int sizeStr = strlen(str);
 	char *str2;
+	int i = 0;
 
 	if (str == NULL)
 		return (0);
@@ -17,11 +18,11 @@ char *_strdup(char *str)
 	
 	if (str2 == NULL)
 		return (0);
-	while (*str)
+	while (i < sizeStr)
 	{
-		*str2++ = *str++;
+		*(str2 + i) = *(str + i);
 	}
-	*str2 = 0;
+	*(str2 + i) = '\0';
 	free(str);
 	return (str2);
 }
