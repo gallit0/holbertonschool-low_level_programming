@@ -21,6 +21,7 @@ char *_strdup(char *str)
 	while (i < sizeStr)
 	{
 		*(str2 + i) = *(str + i);
+		i++;
 	}
 	*(str2 + i) = '\0';
 	free(str);
