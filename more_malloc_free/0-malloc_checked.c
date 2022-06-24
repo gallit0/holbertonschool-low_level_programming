@@ -7,12 +7,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *p;
+	int *p = 98;
 
 	p = malloc(b);
 	if (p == NULL)
 	{
-		p = 98;
 		return (p);
 	}
 	return (p);
