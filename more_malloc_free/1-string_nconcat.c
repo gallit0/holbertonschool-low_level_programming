@@ -28,11 +28,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1++;
 		p++;
 	}
-	while (*s2)
+	while (*p)
 	{
 		*p = *s2;
 		s2++;
 		p++;
 	}
+
 	return (p);
 }
