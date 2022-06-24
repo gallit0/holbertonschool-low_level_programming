@@ -12,8 +12,8 @@ void *malloc_checked(unsigned int b)
 
 	if (p == NULL)
 	{
-		*p = 98
-		return (*p);
+		printf(98);
+		return;
 	}
 	return (p);
 }
