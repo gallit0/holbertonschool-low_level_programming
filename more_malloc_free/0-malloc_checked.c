@@ -7,9 +7,8 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *p[] = 98;
+	*p = malloc(b);
 
-	p = malloc(b);
 	if (p == NULL)
 	{
 		return (p);
