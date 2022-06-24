@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int b)
 
 	if (p == NULL)
 	{
-		printf(98);
+		printf("98");
 		return;
 	}
 	return (p);
