@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 	if (p == NULL)
 	{
 		printf("98");
-		return (98);
+		return (p);
 	}
 	return (p);
 }
