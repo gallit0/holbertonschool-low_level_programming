@@ -5,12 +5,14 @@
  * @s1: string
  * @s2: string
  * @n: int
+ * Return: char
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	int i, j;
+	int i;
+	int j = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -26,9 +28,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[i] = s1[i];
 	}
-	for (j = 0; p[i]; i++, j++)
+	while (j < n)
 	{
 		p[i] = s2[j];
+		i++;
+		j++;
 	}
 	return (p);
 }
