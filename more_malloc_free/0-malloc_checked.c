@@ -3,6 +3,7 @@
 /**
  * malloc_checked - allocate memory
  * @b: int
+ * Return: void
  */
 
 void *malloc_checked(unsigned int b)
@@ -11,7 +12,8 @@ void *malloc_checked(unsigned int b)
 
 	if (p == NULL)
 	{
-		return (98);
+		*p = 98
+		return (*p);
 	}
 	return (p);
 }
