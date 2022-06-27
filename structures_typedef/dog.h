@@ -2,7 +2,7 @@
 #define MAIN_H
 
 /**
- * dog - dog object
+ * struct dog - dog object
  * @name: string
  * @age: float
  * @owner: string
