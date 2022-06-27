@@ -14,11 +14,11 @@ struct dog
 	float age;
 	char *owner;
 };
-struct dog_t
+typedef struct dog
 {
-	char *name;
-	float age;
-	char *owner;
+        char *name;
+        float age;
+        char *owner;
 };
 int main(void);
 void init_dog(struct dog *d, char *name, float age, char *owner);
