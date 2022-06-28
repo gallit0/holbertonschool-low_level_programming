@@ -10,8 +10,9 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->ownder = owner;
-	return (new_dog);
+	void *p;
+	p->name = name;
+	p->age = age;
+	p->ownder = owner;
+	return (p);
 }
