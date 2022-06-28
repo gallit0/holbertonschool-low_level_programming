@@ -1,7 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-#undef NULL
-#define NULL (nil)
 /**
  * struct dog - dog object
  * @name: string
