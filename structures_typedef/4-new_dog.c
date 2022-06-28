@@ -10,10 +10,10 @@
 
 struct dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog *p;
+	dog *p = 0;
 
 	p->name = name;
 	p->age = age;
-	p->owner = owner;
+	p->owner = owneru;
 	return (p);
 }
