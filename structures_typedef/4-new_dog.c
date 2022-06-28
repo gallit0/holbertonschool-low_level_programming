@@ -10,7 +10,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog *p = 0;
+	dog_t *p = 0;
 
 	(*p).name = name;
 	(*p).age = age;
