@@ -10,9 +10,13 @@ void print_dog(struct dog *d)
 {
 	if (!d)
 		return;
-	#undef NULL_POINTER
-	#define NULL_POINTER "nil"
-	printf("Name: %s\n", d->name);
+	if (!d->name)
+		printf("Name: (nil)\n")
+	else
+		printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
-	printf("Owner: %s\n", d->owner);
+	if (!d->owner)
+		printf("Owner: (nil)\n")
+	else
+		printf("Owner: %s\n", d->owner);
 }
