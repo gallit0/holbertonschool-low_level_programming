@@ -8,12 +8,12 @@
  * Return: dog :)
  */
 
-dog_t *new_dog(char *name, float age, char *owner)
+struct dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog p;
+	dog *p;
 
-	strcpy(p.name, name);
-	strcpy(p.age, age);
-	strcpy(p.owner, owner);
+	p->name = name;
+	p->age = age;
+	p->owner = owner;
 	return (p);
 }
