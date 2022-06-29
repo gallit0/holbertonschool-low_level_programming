@@ -6,13 +6,9 @@
  * @f: pointer
  */
 
-void print_name(char *name, void (*f)(char *)__attribute__((unused)))
+void print_name(char *name, void (*f)(char *))
 {
-	int i = 0;
-
-	while (name[i])
-	{
-		_putchar(name[i]);
-		i++;
-	}
+	if (!name && !f)
+		return;
+	(*f)(name);
 }
