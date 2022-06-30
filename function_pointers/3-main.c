@@ -11,12 +11,12 @@ int main(int argc, char *argv[])
 {
 	int a, b;
 
-	if (argc < 4 || (argv[2] != 37 && argv[2] != 42 && argv[2] != 43))
+	if (argc < 4 || (argv[2] != '%' && argv[2] != '*' && argv[2] != '+'))
 	{
 		printf("Error\n");
 		return (0);
 	}
-	if (argv[2] != 45 && argv[2] != 47)
+	if (argv[2] != '/' && argv[2] != '-')
 	{
 		printf("Error\n");
 	}
