@@ -9,17 +9,13 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	char *p;
-	int i;
+	size_t i;
 
-	if (array == NULL || action == NULL)
-		return;
-	if (size > strlen(array))
-		size = strlen(array);
-	p = malloc(size + 1);
-	if (p == NULL)
-		return;
-	for (i = 0; p[i]; i++)
-		p[i] = array[i];
-	(*action)(p);
+	if (array && action)
+	}
+		for (i = 0; i < size; i++)
+		{
+			(*action)(array[i]);
+		}
+	}
 }
