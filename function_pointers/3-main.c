@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int a, b, result;
 
 	if (argc < 4 || (*argv[2] != '%' && *argv[2] != '*' && *argv[2] != '+'))
 	{
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (0);
 	}
-	result = (*get_op_func(*argv[2])(a, b);
+	result = (*get_op_func(argv[2])(a, b);
 	printf("%d\n", result);
 	return (0);
 }
