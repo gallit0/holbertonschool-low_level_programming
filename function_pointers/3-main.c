@@ -11,15 +11,19 @@ int main(int argc, char *argv[])
 {
 	int a, b;
 
-	if (argc < 4)
+	if (argc < 4 || (argv[2] != 37 && argv[2] != 42 && argv[2] != 43))
 	{
 		printf("Error\n");
 		return (0);
 	}
+	if (argv[2] != 45 && argv[2] != 47)
+	{
+		printf("Error\n");
+	}
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	get_op_func(argv[2], a, b);
-
+	result = (*get_op_func(argv[2])(a, b);
+	printf("%d\n", result);
 	return (0);
 }
