@@ -3,8 +3,6 @@
 /**
  * get_op_func - get operation function
  * @s: string
- * @a: int
- * @b: int
  * Return: int
  */
 
