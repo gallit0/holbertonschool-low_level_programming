@@ -15,7 +15,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (array == NULL || action == NULL)
 		return;
 	if (size > strlen(array))
-		size == strlen(array);
+		size = strlen(array);
 	p = malloc(size + 1);
 	if (p == NULL)
 		return;
