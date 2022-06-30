@@ -8,9 +8,9 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int main(int argc, char *argv[]);
 
-typedef struct op
+typedef struct ops
 {
-	char *p;
+	char *op;
 	int (*f)(int a, int b);
 } op_t;
 
