@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#define nil NULL
+#define NULL nil
 /**
  * print_strings - print a string :p
  * @separator: string
