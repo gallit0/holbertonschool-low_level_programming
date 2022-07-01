@@ -3,10 +3,21 @@
 /**
  * print_all - print anything
  * @str: string
- * @format: format
  */
 
-void print_all(const char *str, const format, ...)
+void print_all(const char * const format, ...)
 {
+	while(*format)
+	{
+		if (format == c)
+		{
 
+		}
+		else if(format ++ i)
+		{
+
+		}
+		printf();
+		format++
+	}
 }
