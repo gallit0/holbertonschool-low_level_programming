@@ -9,6 +9,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list ptr;
+	va_list ptr2;
 
 	if (separator == NULL)
 		separator = "";
@@ -16,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(ptr, n);
 	for (i = 0; i < n; i++)
 	{
-		if (__va_list_tag[i] == NULL)
+		if (if(va_arg(ptr2, char*)) == NULL)
 			printf("(nil)");
 		else
 			printf("%s", va_arg(ptr, char *));
