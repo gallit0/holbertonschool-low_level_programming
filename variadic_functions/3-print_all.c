@@ -9,11 +9,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
+	int i = 0;
 
 	va_start(ptr, strlen(format));
-	while(*format)
+	while(format[i])
 	{
-		switch (*format)
+		switch (format[i])
 		{
 			case 'c':
 				printf("%c, ", va_arg(ptr, char));
@@ -30,7 +31,7 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		format++;
+		i++;
 	}
 	va_end(ptr);
 	putchar(10);
