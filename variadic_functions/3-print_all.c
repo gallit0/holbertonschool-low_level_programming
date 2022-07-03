@@ -77,4 +77,6 @@ void print_all(const char * const format, ...)
 		j = 0;
 		i++;
 	}
+	putchar(10);
+	va_end(ptr);
 }
