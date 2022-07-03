@@ -14,16 +14,16 @@ void print(char format, ...)
         switch (format)
         {
                 case 'c':
-                        printf("%c", va_arg(ptr, int));
+                        printf("%c", va_arg(word, int));
                         break;
                 case 'i':
-                        printf("%d", va_arg(ptr, int));
+                        printf("%d", va_arg(word, int));
                         break;
                 case 'f':
-                        printf("%f", va_arg(ptr, double));
+                        printf("%f", va_arg(word, double));
                         break;
                 case 's':
-                        printf("%s", va_arg(ptr, char *));
+                        printf("%s", va_arg(word, char *));
                         break;
                 default:
                         break;
