@@ -12,10 +12,11 @@ void print_all(const char * const format, ...)
 	va_list ptr2;
 	va_list ptr3;
 	int i = 0;
-	int len = strlen(format);
+	int len;
 
 	if (format == NULL)
 		return;
+	len = strlen(format);
 	va_start(ptr, format);
 	va_start(ptr2, format);
 	va_start(ptr3, format);
