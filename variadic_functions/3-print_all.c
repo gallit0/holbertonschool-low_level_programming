@@ -29,7 +29,7 @@ void p_float(va_list ptr)
  * p_string - print
  * @ptr: arg
  */
-void print_string(va_list ptr)
+void p_string(va_list ptr)
 {
 	char *s;
 
