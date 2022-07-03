@@ -23,7 +23,7 @@ void p_int(va_list ptr)
  */
 void p_float(va_list ptr)
 {
-	printf("%f", va_arg(ptr, double))
+	printf("%f", va_arg(ptr, double));
 }
 /**
  * p_string - print
