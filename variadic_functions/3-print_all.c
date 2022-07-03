@@ -7,7 +7,7 @@
  */
 void p_char(va_list ptr)
 {
-	printf("%c", va_arg(ptr, char))
+	printf("%c", va_arg(ptr, char));
 }
 /**
  * p_int - print
