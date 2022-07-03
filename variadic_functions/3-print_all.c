@@ -50,8 +50,6 @@ void print_string(va_list ptr)
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
-	int i = 0, j = 0;
-	char *sep = "";
 
 	data dat[] = {
 		{"c", p_char},
@@ -59,6 +57,9 @@ void print_all(const char * const format, ...)
 		{"f", p_float},
 		{"s", p_string},
 	};
+	int i = 0;
+	int j = 0;
+	char *sep = "";
 
 	va_start(ptr, format);
 
