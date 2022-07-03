@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	int i = 0;
-	unsigned int len = strlen(format);
+	const unsigned int len = strlen(format);
 
 	va_start(ptr, len);
 	while(format[i])
