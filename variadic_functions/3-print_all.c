@@ -2,6 +2,47 @@
 #include <string.h>
 
 /**
+ * p_char - print
+ * @ptr: arg
+ */
+void p_char(va_list ptr)
+{
+	printf("%c", va_arg(ptr, char))
+}
+/**
+ * p_int - print
+ * @ptr: arg
+ */
+void p_int(va_list ptr)
+{
+	printf("%d", va_arg(ptr, int));
+}
+/**
+ * p_float - print
+ * @ptr: arg
+ */
+void p_float(va_list ptr)
+{
+	printf("%f", va_arg(ptr, double))
+}
+/**
+ * p_string - print
+ * @ptr: arg
+ */
+void print_string(va_list ptr)
+{
+	char *s;
+
+	s = va_arg(ptr, char *);
+	if (!s)
+	{
+		printf("%p", s);
+		return;
+	}
+	printf("%s", s);
+}
+
+/**
  * print_all - print anything
  * @format: string
  */
@@ -9,40 +50,31 @@
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
-	int i = 0;
-	int len;
+	int i = 0, j = 0;
+	char *sep = "";
 
-	if (format == NULL)
-	{
-		putchar(10);
-		return;
-	}
-	len = strlen(format);
+	data dat[] = {
+		{"c", p_char},
+		{"i", p_int},
+		{"f", p_float},
+		{"s", p_string},
+	};
+
 	va_start(ptr, format);
-	while (i < len)
+
+	while (format[i])
 	{
-		switch (format[i])
+		while (j < 4)
 		{
-			case 'c':
-				printf("%c", va_arg(ptr, int));
-				break;
-			case 'i':
-				printf("%d", va_arg(ptr, int));
-				break;
-			case 'f':
-				printf("%f", va_arg(ptr, double));
-				break;
-			case 's':
-				printf("%ps", va_arg(ptr, char *));
-				break;
-			default:
-				i++;
-				continue;
+			if (*dat[j].type == format[i])
+			{
+				printf("%s", sep);
+				dat[j].f(ptr);
+				sep = ", ";
+			}
+			j++;
 		}
-		if (i != (len - 1))
-			printf(", ");
+		j = 0;
 		i++;
 	}
-	va_end(ptr);
-	putchar(10);
 }
