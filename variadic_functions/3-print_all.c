@@ -23,16 +23,16 @@ void print_all(const char * const format, ...)
 	{
 		switch(format[i])
 			case 'c':
-				printf("%c", va_arg(word, int));
+				printf("%c", va_arg(ptr, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(word, int));
+				printf("%d", va_arg(ptr, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(word, double));
+				printf("%f", va_arg(ptr, double));
 				break;
 			case 's':
-				printf("%s", va_arg(word, char *));
+				printf("%s", va_arg(ptr, char *));
 				break;
 			default:
 				break;
