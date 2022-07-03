@@ -10,7 +10,7 @@ void print(char format, ...)
 {
         va_list word;
 
-        va_start(word, 1);
+        va_start(word, format);
         switch (format)
         {
                 case 'c':
@@ -28,6 +28,7 @@ void print(char format, ...)
                 default:
                         break;
         }
+	va_end(word);
 }
 
 /**
