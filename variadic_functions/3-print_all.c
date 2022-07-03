@@ -10,8 +10,9 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	int i = 0;
+	int len = strlen(format);
 
-	va_start(ptr, strlen(format));
+	va_start(ptr, len);
 	while(format[i])
 	{
 		switch (format[i])
