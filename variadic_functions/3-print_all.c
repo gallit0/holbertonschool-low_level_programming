@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 				printf("%f, ", va_arg(ptr, double));
 				break;
 			case 's':
-				printf("%p, ", va_arg(ptr, char *));
+				printf("%s, ", va_arg(ptr, char *));
 				break;
 			default:
 				break;
