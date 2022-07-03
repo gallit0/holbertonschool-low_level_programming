@@ -23,5 +23,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	putchar(10);
 	va_end(ptr);
-	va_end(ptr2);
 }
