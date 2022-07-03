@@ -14,6 +14,8 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	int len = strlen(format);
 
+	if (format == NULL)
+		return;
 	va_start(ptr, format);
 	va_start(ptr2, format);
 	va_start(ptr3, format);
