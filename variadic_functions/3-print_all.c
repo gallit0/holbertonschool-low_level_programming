@@ -8,7 +8,6 @@
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
-	va_list ptr2;
 
 	va_start(ptr, strlen(format));
 	while(*format)
@@ -25,12 +24,13 @@ void print_all(const char * const format, ...)
 				printf("%f, ", va_arg(ptr, float));
 				break;
 			case s:
-				
+				printf("%p, ", va_arg(ptr, char *));
 				break;
 			default:
 				break;
 		}
 		format++;
 	}
+	va_end(ptr);
 	putchar(10);
 }
