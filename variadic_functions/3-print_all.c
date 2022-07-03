@@ -50,7 +50,7 @@ void print_all(const char * const format, ...)
 	va_start(ptr, format);
 	while (i < len)
 	{
-		print(format[i], va_arg);
+		print(format[i], va_arg(ptr));
 		if (i != (len - 1))
 		{
 			printf(", ");
