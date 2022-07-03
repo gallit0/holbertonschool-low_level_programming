@@ -51,7 +51,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 
-	data dat[] = {
+	typedef data dat[] = {
 		{"c", p_char},
 		{"i", p_int},
 		{"f", p_float},
