@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <string.h>
 
 /**
  * print_all - print anything
@@ -12,18 +13,18 @@ void print_all(const char * const format, ...)
 	va_start(ptr, strlen(format));
 	while(*format)
 	{
-		switch (format)
+		switch (*format)
 		{
-			case c:
+			case 'c':
 				printf("%c, ", va_arg(ptr, char));
 				break;
-			case i:
+			case 'i':
 				printf("%d, ", va_arg(ptr, int));
 				break;
-			case f:
+			case 'f':
 				printf("%f, ", va_arg(ptr, float));
 				break;
-			case s:
+			case 's':
 				printf("%p, ", va_arg(ptr, char *));
 				break;
 			default:
