@@ -1,4 +1,5 @@
 #!/bin/bash
 CC=gcc
+SRC=main.c school.c
 all: main.c school.c
-	$(CC) $(SRC).c -o school
+	$(CC) $(SRC) -o school
