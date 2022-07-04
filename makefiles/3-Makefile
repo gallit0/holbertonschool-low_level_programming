@@ -8,7 +8,7 @@ all: $(OBJ)
 	$(CC) $(SRC) -o $ holberton
 clean:
 	$(RM) *~ $(NAME)
-	$(CC) *~ holberton
+	$(RM) *~ holberton
 oclean:
 	$(RM) $(OBJ)
 fclean:
