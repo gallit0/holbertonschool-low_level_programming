@@ -5,10 +5,13 @@ NAME=school
 RM=rm -f
 all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(SRC) -o $ holberton
 clean:
 	$(RM) *~ $(NAME)
+	$(CC) *~ holberton
 oclean:
 	$(RM) $(OBJ)
 fclean:
-	$(RM *~ $(OBJ) $(NAME)
+	$(RM) *~ $(OBJ) $(NAME)
+	$(RM) *~ $(OBJ) holberton
 re: oclean all
