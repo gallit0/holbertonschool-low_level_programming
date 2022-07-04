@@ -1,0 +1,3 @@
+#!/bin/bash
+all: main.c school.c
+	$(CC) $(SRC).c school
