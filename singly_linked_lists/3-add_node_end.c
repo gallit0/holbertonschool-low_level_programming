@@ -4,7 +4,8 @@
  * add_node_end - add a new node at the endo of list
  * @head: head of linked list
  * @str: string
- * Return: list_t pointer */
+ * Return: list_t pointer
+ */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
