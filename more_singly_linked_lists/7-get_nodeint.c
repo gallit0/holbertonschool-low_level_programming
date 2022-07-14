@@ -15,10 +15,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	for (; p; p = p->next)
 	{
 		if (p->n >= i)
-			break;
+		{
+			return (p);
+		}
 	}
-	if (p->next == NULL)
-		return (0);
-
-	return (p);
+	return (0);
 }
