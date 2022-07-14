@@ -10,10 +10,11 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *p = head;
+	int i = index;
 
 	for (; p; p = p->next)
 	{
-		if(p->n > index)
+		if (p->n >= i)
 			break;
 	}
 	if (p->next == NULL)
