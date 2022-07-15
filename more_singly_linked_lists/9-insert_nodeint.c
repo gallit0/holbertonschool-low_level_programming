@@ -20,7 +20,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	p1->next = NULL;
 
 	idx--;
-	while (idx != 1)
+	while (idx > 1)
 	{
 		p0 = p0->next;
 		idx--;
