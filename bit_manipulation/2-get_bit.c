@@ -9,7 +9,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (idex > 9)
+	if (index > 9)
 		return (-1);
 	n = n >> index;
 	return (n % 2);
