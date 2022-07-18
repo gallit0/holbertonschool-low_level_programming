@@ -22,12 +22,12 @@ unsigned int power(unsigned int x, unsigned int y)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, j = strlen(b);
+	unsigned int i, j;
 	unsigned int n = 0;
 
 	if (!b)
 		return (0);
-
+	j = strlen(b);
 	for (i = 0; b[i]; i++, j--)
 	{
 		if (b[i] != '0' && b[i] != '1')
