@@ -2,6 +2,8 @@
 
 /**
  * power - power of x to y
+ * @x: un int
+ * @y: un int
  * Return:result
  */
 
