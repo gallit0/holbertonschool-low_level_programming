@@ -9,7 +9,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index > 9 && n == ULONG_MAX)
+	if (index > 31)
 		return (-1);
 	n = n >> index;
 	return (n % 2);
