@@ -20,9 +20,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!p)
 		return (0);
-	while (c != EOF && counter < l)
+	while (!feof(p) && l > counter)
 	{
-		c = fgetc(p);
+		c = getc(p);
 		putchar(c);
 		counter++;
 	}
