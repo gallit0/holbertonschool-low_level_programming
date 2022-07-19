@@ -9,26 +9,21 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *p;
-	char c;
-	ssize_t counter = 0;
-	ssize_t l = letters;
+	ssize_t o, r, w;
+	char *f;
 
-	if (!filename)
+	f = malloc(letters);
+	if (!f)
 		return (0);
-	p = fopen(filename, "r");
 
-	if (!p)
+	o = open(filename, "r");
+	r = read(o, f, letters);
+	w = write(STDOUT_FILENO, f, r);
+
+	if (r != w || o == -1 || r == -1 || w == -1)
 		return (0);
-	while (!feof(p) && l > counter)
-	{
-		if (c > 126)
-			continue;
-		c = getc(p);
-		putchar(c);
-		counter++;
-	}
-	fclose(p);
 
-	return (counter);
+	free(f);
+	close(o);
+	return (w);
 }
