@@ -22,6 +22,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	while (!feof(p) && l > counter)
 	{
+		if (c > 170)
+			continue;
 		c = getc(p);
 		putchar(c);
 		counter++;
