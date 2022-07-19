@@ -9,8 +9,23 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-
+	FILE *p;
+	char c;
+	ssize_t counter = 0;
+	ssize_t l = letters;
 	if (!filename)
 		return (0);
+	p = fopen(filename, "r");
 
+	if (!p)
+		return (0);
+	do
+	{
+		c = fgetc(p);
+		putchar (c);
+		counter++;
+	} while (c != EOF && counter < l);
+	fclose(p);
+
+	return (counter);
 }
