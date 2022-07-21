@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main (int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int o, o1, r;
 	char *buff[1024];
@@ -19,9 +19,9 @@ int main (int argc,char *argv[])
 	}
 	o = open(argv[1], O_RDONLY);
 	o1 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while((r = read(o, buff, 1024)) > 0)
+	while ((r = read(o, buff, 1024)) > 0)
 	{
-		if(o1 == -1 || write(o1, buff, r) != r)
+		if (o1 == -1 || write(o1, buff, r) != r)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
@@ -29,10 +29,10 @@ int main (int argc,char *argv[])
 	}
 	if (r == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
 		exit(98);
 	}
-	if(close(o) == -1 || close(o1) == -1)
+	if (close(o) == -1 || close(o1) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd -1\n");
 		exit(100);
