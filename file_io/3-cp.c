@@ -18,7 +18,7 @@ int main (int argc,char *argv[])
 		exit(97);
 	}
 	o = open(argv[1], O_RDONLY);
-	o1 = open(arv[2], O_CREATE | O_WRONLY | O_TRUNCATE, 0664);
+	o1 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while((r = read(o, buff, 1024)) > 0)
 	{
 		if(o1 == -1 || write(o1, buff, r) != r)
